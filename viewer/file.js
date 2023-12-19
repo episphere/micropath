@@ -169,6 +169,7 @@ const loadModelOptions = () => {
       optionsTabContent.firstElementChild.firstElementChild.innerText = "Model successfully Loaded!"
       const runModelButton = document.createElement("button")
       runModelButton.id = "runModelBtn"
+      runModelButton.classList = "m-1 pt-2 pb-2 pl-4 pr-4 text-gray-900 border rounded-md border-gray-400 hover:bg-green-200"
       runModelButton.innerText = "Run Model"
       if (!isImageLoaded) {
         runModelButton.setAttribute("disabled", true)
