@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <title>MicroPath</title>
+  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"> -->
+  <!-- <link rel="stylesheet" href="./imgBox.css"> -->
+  <script src="file.js" type="module"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <div class="mx-5 my-2">
+    <div id="header" class="h-fit p-1">
+      <h1 class="text-5xl text-red-700"><a href="../../index.html">MicroPath</a>
+        <sup class="text-lg text-blue-700">
+          [<a href="https://github.com/episphere/micropath" target="_blank" disabled>code</a>]
+          [<a href="https://github.com/episphere/micropath/issues/new" target="_blank" disabled>issues</a>]
+        </sup>
+      </h1>
+    </div>
+    <hr>
+    <div id="dataSourcePicker" class="flex w-full pt-2">
+      <div id="localFilePicker" class="hidden grow">
+        <input type="file" name="localFilePicker" id="localFilePicker"
+          class="w-full rounded-md border-0 py-1.5 pl-2 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+      </div>
+      <div id="remoteURL" class="hidden flex grow">
+        <label for="remoteURLTextbox" class="flex-none text-md font-medium m-auto leading-6 text-gray-900 pr-2">Image URL:</label>
+        <input type="text" name="remoteURLTextbox" id="remoteURLTextbox"
+          class="grow rounded-md border-0 py-1.5 pl-2 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        <button id="remoteURLSubmit" class="ml-1 p-1 rounded-sm border-cyan-600 ring-1 ring-inset ring-cyan-600"><img src="/assets/downloadIcon.png" class="w-8 h-8"></button>
+      </div>
+    </div>
+    <div id="content" class="grid grid-cols-3 gap-2 h-5/6 pt-2">
+      <div id="viewerStuff" class="col-span-2 w-full h-full">
+        <div id="viewer" class="">
+          <div id="progressBarContainer">
+            <div id="progressBar"></div>
+          </div>
+          <div id="openseadragon" class="openseadragon bg-black"></div>
+        </div>
+      </div>
+      <div id="modelAndAnnotationOptions" class="col-span-1 w-full h-full border-0 ring-1 ring-inset ring-gray-300">
+        <div id="optionsHeader" class="grid grid-cols-2">
+          <div class="border border-grey-400"><button id="modelOptionsTab" class="w-full p-3 align-center hover:bg-blue-100">Model</button></div>
+          <div class="border border-grey-400"><button id="annotationOptionsTab" class="w-full p-3 align-center hover:bg-blue-100 disabled">Annotations</button></div>
+        </div>
+        <div id="optionsTabContent" class="w-full h-full"></div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/openseadragon@4.1.0/build/openseadragon/openseadragon.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/episphere/GeoTIFFTileSource-JPEG2k/GeoTIFFTileSource.js" type="module"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

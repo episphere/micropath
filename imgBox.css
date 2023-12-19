@@ -1,0 +1,7 @@
+.wsiModelAnnotation {
+  outline: 1px solid rgba(29, 172, 29, 0.6);
+}
+
+.wsiProcessing {
+  outline: 1px dashed rgba(65, 105, 225, 0.6);
+}

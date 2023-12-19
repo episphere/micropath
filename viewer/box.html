@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>MicroPath</title>
+  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="imgBox.css"> -->
+  <script src="viewer.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <div class="mx-5 my-2">
+    <div id="header">
+      <h1 class="text-5xl text-red-700"><a href="../../index.html">MicroPath</a>
+        <sup class="text-lg text-blue-700">
+          [<a href="https://github.com/episphere/micropath" target="_blank" disabled>code</a>]
+          [<a href="https://github.com/episphere/micropath/issues/new" target="_blank" disabled>issues</a>]
+        </sup>
+      </h1>
+    </div>
+    <hr>
+  </div>
+
+  <div id="viewer">
+    <div id="progressBarContainer">
+      <div id="progressBar"></div>
+    </div>
+    <div id="openseadragon" class="openseadragon"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/openseadragon@4.1.0/build/openseadragon/openseadragon.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/episphere/GeoTIFFTileSource-JPEG2k/GeoTIFFTileSource.js" type="module" crossorigin="anonymous"></script>
+</body>
+
+</html>

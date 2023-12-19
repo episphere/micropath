@@ -1,0 +1,26 @@
+{
+    "box": {
+        "id": 0,
+        "displayName": "Box",
+        "iconImgPath": "assets/boxLogo.png",
+        "redirectPath": "viewer/box.html#dataSource=box",
+        "local": false,
+        "disabled": true
+    },
+    "device": {
+        "id": 1,
+        "displayName": "Device",
+        "iconImgPath": "assets/hardDiskIcon.png",
+        "redirectPath": "viewer/file.html#dataSource=device",
+        "local": true,
+        "disabled": false
+    },
+    "url": {
+        "id": 2,
+        "displayName": "URL",
+        "iconImgPath": "assets/urlIcon.png",
+        "redirectPath": "viewer/file.html#dataSource=url",
+        "local": false,
+        "disabled": false
+    }
+}
