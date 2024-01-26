@@ -39,7 +39,8 @@ const loadHashParams = () => {
   }
 
   if (hashParams["fileURL"] && previousHashParams?.fileURL !== hashParams["fileURL"]) {
-    progressBar(false)
+    // progressBar(false)
+    document.getElementById("remoteURLTextbox").value = hashParams["fileURL"]
     viewerObj.loadImage(hashParams["fileURL"])
   }
 
