@@ -128,7 +128,7 @@ const setDataSource = (dataSource) => {
       }
     }
     document.getElementById("remoteURL").querySelector("button").onclick = (e) => {
-      viewerObj.loadImage(e.target.value)
+      viewerObj.loadImage(document.getElementById("remoteURL").querySelector("input").value)
     }
   }
 }

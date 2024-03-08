@@ -94,7 +94,7 @@ const progressBar = (show=true) => {
 
 const createTileSource = async (url) => {
   // Create a tile source for the image.
-  const tileSources = await OpenSeadragon.GeoTIFFTileSource.getAllTileSources(url, { logLatency: false, cache: true })
+  const tileSources = await OpenSeadragon.GeoTIFFTileSource.getAllTileSources(url, { logLatency: false, cache: true, slideOnly: true })
   return tileSources[0]
 }
 
@@ -130,6 +130,7 @@ viewerObj.loadImage = async (url) => {
   }
 
   viewerObj.viewer.addOnceHandler('open', viewerObj.handlers.viewer.open)
+  viewerObj.viewer.tileSources?._pool?.destroy()
   viewerObj.viewer.open(tileSource)
 }
 
